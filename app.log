@@ -1,0 +1,213 @@
+Request: GET http://127.0.0.1:8000/
+Response: 200
+
+Request: GET http://127.0.0.1:8000/static/css/main.css
+Response: 200
+
+Request: GET http://127.0.0.1:8000/static/css/images/overlay.svg
+Response: 200
+
+Request: GET http://127.0.0.1:8000/static/css/images/bg.png
+Response: 200
+
+Request: GET http://127.0.0.1:8000/static/css/images/overlay-pattern.png
+Response: 200
+
+Request: GET http://127.0.0.1:8000/favicon.ico
+Response: 404
+
+Request: GET http://127.0.0.1:8000/flutter_service_worker.js?v=372266424
+Response: 404
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/create
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/create
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/create
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/create
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/create
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/create
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: GET http://127.0.0.1:8000/
+Response: 200
+
+Request: GET http://127.0.0.1:8000/static/css/main.css
+Response: 200
+
+Request: GET http://127.0.0.1:8000/static/css/images/overlay-pattern.png
+Response: 200
+
+Request: GET http://127.0.0.1:8000/static/css/images/bg.png
+Response: 200
+
+Request: GET http://127.0.0.1:8000/static/css/images/overlay.svg
+Response: 200
+
+Request: GET http://127.0.0.1:8000/favicon.ico
+Response: 404
+
+Request: GET http://127.0.0.1:8000/flutter_service_worker.js?v=372266424
+Response: 404
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 200
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 401
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 403
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 403
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 403
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 403
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 401
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 200
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 401
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/auth
+Response: 401
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/create
+Response: 500
+
+Request: POST http://127.0.0.1:8000/api/brand_creator/create
+Response: 400
+

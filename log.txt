@@ -1,0 +1,133 @@
+2023-08-15 00:17:20,222 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2023-08-15 00:17:20,222 - INFO - [33mPress CTRL+C to quit[0m
+2023-08-15 00:17:24,264 - DEBUG - Starting new HTTPS connection (1): domyland.kaiten.ru:443
+2023-08-15 00:17:24,499 - DEBUG - https://domyland.kaiten.ru:443 "GET /api/latest/cards/09 HTTP/1.1" 403 None
+2023-08-15 00:17:24,504 - ERROR - Exception on /api/brand_creator/create [POST]
+Traceback (most recent call last):
+  File "/Users/folsout/PycharmProjects/domyland_brand/venv/lib/python3.10/site-packages/requests/models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/folsout/PycharmProjects/domyland_brand/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/folsout/PycharmProjects/domyland_brand/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/folsout/PycharmProjects/domyland_brand/venv/lib/python3.10/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/folsout/PycharmProjects/domyland_brand/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/folsout/PycharmProjects/domyland_brand/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/folsout/PycharmProjects/domyland_brand/__init__.py", line 70, in create
+    title: str = create_brand_feature.brand_creator.init(new_brand)
+  File "/Users/folsout/PycharmProjects/domyland_brand/create_brand_feature/brand_creator.py", line 12, in init
+    ticket_title = get_ticket_full_name_by_id(brand.ticket_id)
+  File "/Users/folsout/PycharmProjects/domyland_brand/create_brand_feature/kaiten_data_source.py", line 8, in get_ticket_full_name_by_id
+    ticket_title = a.json().get("title")
+  File "/Users/folsout/PycharmProjects/domyland_brand/venv/lib/python3.10/site-packages/requests/models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2023-08-15 00:17:24,510 - INFO - 127.0.0.1 - - [15/Aug/2023 00:17:24] "[35m[1mPOST /api/brand_creator/create HTTP/1.1[0m" 500 -
+2023-08-15 00:17:38,947 - DEBUG - Starting new HTTPS connection (1): domyland.kaiten.ru:443
+2023-08-15 00:17:39,174 - DEBUG - https://domyland.kaiten.ru:443 "GET /api/latest/cards/09 HTTP/1.1" 403 None
+2023-08-15 00:17:39,186 - ERROR - Exception on /api/brand_creator/create [POST]
+Traceback (most recent call last):
+  File "/Users/folsout/PycharmProjects/domyland_brand/venv/lib/python3.10/site-packages/requests/models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/folsout/PycharmProjects/domyland_brand/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/folsout/PycharmProjects/domyland_brand/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/folsout/PycharmProjects/domyland_brand/venv/lib/python3.10/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/folsout/PycharmProjects/domyland_brand/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/folsout/PycharmProjects/domyland_brand/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/folsout/PycharmProjects/domyland_brand/__init__.py", line 70, in create
+    title: str = create_brand_feature.brand_creator.init(new_brand)
+  File "/Users/folsout/PycharmProjects/domyland_brand/create_brand_feature/brand_creator.py", line 12, in init
+    ticket_title = get_ticket_full_name_by_id(brand.ticket_id)
+  File "/Users/folsout/PycharmProjects/domyland_brand/create_brand_feature/kaiten_data_source.py", line 8, in get_ticket_full_name_by_id
+    ticket_title = a.json().get("title")
+  File "/Users/folsout/PycharmProjects/domyland_brand/venv/lib/python3.10/site-packages/requests/models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2023-08-15 00:17:39,188 - INFO - 127.0.0.1 - - [15/Aug/2023 00:17:39] "[35m[1mPOST /api/brand_creator/create HTTP/1.1[0m" 500 -
+2023-08-15 00:33:16,260 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2023-08-15 00:33:16,260 - INFO - [33mPress CTRL+C to quit[0m
+2023-08-15 22:28:12,826 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2023-08-15 22:28:12,826 - INFO - [33mPress CTRL+C to quit[0m
+2023-08-15 22:30:05,788 - ERROR - Exception on /api/brand_creator/auth [POST]
+Traceback (most recent call last):
+  File "/Users/folsout/PycharmProjects/domyland_brand/__init__.py", line 39, in auth
+    data = request.get_json()
+  File "/Users/folsout/PycharmProjects/domyland_brand/venv/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 607, in get_json
+    return self.on_json_loading_failed(None)
+  File "/Users/folsout/PycharmProjects/domyland_brand/venv/lib/python3.10/site-packages/flask/wrappers.py", line 130, in on_json_loading_failed
+    return super().on_json_loading_failed(e)
+  File "/Users/folsout/PycharmProjects/domyland_brand/venv/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 650, in on_json_loading_failed
+    raise UnsupportedMediaType(
+werkzeug.exceptions.UnsupportedMediaType: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/folsout/PycharmProjects/domyland_brand/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/folsout/PycharmProjects/domyland_brand/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/folsout/PycharmProjects/domyland_brand/venv/lib/python3.10/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/folsout/PycharmProjects/domyland_brand/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/folsout/PycharmProjects/domyland_brand/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/folsout/PycharmProjects/domyland_brand/__init__.py", line 46, in auth
+    return jsonify(e)
+  File "/Users/folsout/PycharmProjects/domyland_brand/venv/lib/python3.10/site-packages/flask/json/__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/Users/folsout/PycharmProjects/domyland_brand/venv/lib/python3.10/site-packages/flask/json/provider.py", line 215, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+  File "/Users/folsout/PycharmProjects/domyland_brand/venv/lib/python3.10/site-packages/flask/json/provider.py", line 180, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/folsout/PycharmProjects/domyland_brand/venv/lib/python3.10/site-packages/flask/json/provider.py", line 120, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type UnsupportedMediaType is not JSON serializable
+2023-08-15 22:30:05,796 - INFO - 127.0.0.1 - - [15/Aug/2023 22:30:05] "[35m[1mPOST /api/brand_creator/auth HTTP/1.1[0m" 500 -
+2023-08-15 22:30:32,840 - INFO - 127.0.0.1 - - [15/Aug/2023 22:30:32] "GET / HTTP/1.1" 200 -
+2023-08-15 22:30:32,871 - INFO - 127.0.0.1 - - [15/Aug/2023 22:30:32] "GET /static/css/main.css HTTP/1.1" 200 -
+2023-08-15 22:30:32,947 - INFO - 127.0.0.1 - - [15/Aug/2023 22:30:32] "GET /static/css/images/overlay-pattern.png HTTP/1.1" 200 -
+2023-08-15 22:30:32,948 - INFO - 127.0.0.1 - - [15/Aug/2023 22:30:32] "GET /static/css/images/bg.png HTTP/1.1" 200 -
+2023-08-15 22:30:32,948 - INFO - 127.0.0.1 - - [15/Aug/2023 22:30:32] "GET /static/css/images/overlay.svg HTTP/1.1" 200 -
+2023-08-15 22:30:33,112 - INFO - 127.0.0.1 - - [15/Aug/2023 22:30:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-08-15 22:30:34,640 - INFO - 127.0.0.1 - - [15/Aug/2023 22:30:34] "[33mGET /flutter_service_worker.js?v=372266424 HTTP/1.1[0m" 404 -
